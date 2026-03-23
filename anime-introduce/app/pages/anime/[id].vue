@@ -16,8 +16,8 @@
 </template>
 
 <script setup lang="ts">
-import AppHeader from "~/app/components/AppHeader.vue";
-import useMicroCMS from "~/app/composables/useMicroCMS";
+import AppHeader from "~/components/AppHeader.vue";
+import useMicroCMS from "~/composables/useMicroCMS";
 import { useRoute } from "vue-router";
 
 const route = useRoute();

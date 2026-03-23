@@ -22,10 +22,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import AppHeader from "~/app/components/AppHeader.vue";
-import AnimeCard from "~/app/components/AnimeCard.vue";
-import GenreFilter from "~/app/components/GenreFilter.vue";
-import useMicroCMS from "~/app/composables/useMicroCMS";
+import useMicroCMS from "~/composables/useMicroCMS";
 
 const page = ref(1);
 const perPage = 24;

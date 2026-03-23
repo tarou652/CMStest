@@ -15,9 +15,8 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{ anime: any }>();
 const props = defineProps<{ anime: any }>();
-import useMicroCMS from "~/app/composables/useMicroCMS";
+import useMicroCMS from "~/composables/useMicroCMS";
 const { getListImageUrl, getLqipUrl } = useMicroCMS();
 const imageUrl = getListImageUrl(props.anime.thumbnail);
 const lqip = getLqipUrl(props.anime.thumbnail);
